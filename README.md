@@ -16,9 +16,9 @@ Documentation for artitrary setups
 * [Setup RDP Client](doc/setup-rdc.md)
 * [Setup PM2 For Debian](doc/setup-pm2.md)
 * To-do List
- * gitk
- * Java
- * Maven
- * Reuse
- * OpenVPN
- * keepass
+  * gitk
+  * Java
+  * Maven
+  * Reuse
+  * OpenVPN
+  * keepass
