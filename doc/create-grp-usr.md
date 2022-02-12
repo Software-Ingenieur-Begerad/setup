@@ -20,7 +20,7 @@ sudo useradd -r -s /bin/false -g <group name> <user name>
 id <group or user name>
 ```
 
-* extract group and user details from OS configuration
+* extract group and user details from OS configuration for verification
 ```
 cat /etc/group|grep <group name>
 cat /etc/passwd|grep <group name>

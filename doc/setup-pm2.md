@@ -10,7 +10,20 @@ sudo apt update
 sudo npm i -g pm2 
 ```
 
-* create group and user ```pm2``` following this [setup](create-grp-usr.md)
+* create group and user ```pm2```
+following this [setup](create-grp-usr.md)
+
+* generate the startup script\
+  **NOTE:** This instruction comes back with a reply like ```To setup the Startup Script, copy/paste the following command: sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u pm2 --hp /home/begerad```
+```
+pm2 startup systemd -u pm2
+```
+
+* confirm that the PM2 startup service is up and running under systemd, run the following command
+```
+systemctl status pm2-<pm2 system user>.service
+```
+
 # Helpful PM2 instructions
 
 * list all node application (process/microservices)
