@@ -14,7 +14,8 @@ Documentation for artitrary setups
 * [Connect To GitHub Using SSH](doc/connect-github-ssh.md)
 * [Connect To VPN](doc/connect-vpn.md)
 * [Setup RDP Client](doc/setup-rdc.md)
-* [Setup PM2 For Debian](doc/setup-pm2.md)
+* [Setup PM2](doc/setup-pm2.md)
+* [Setup NPM](doc/setup-npm.md)
 * To-do List
   * gitk
   * Java
