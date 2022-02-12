@@ -14,7 +14,7 @@ sudo npm i -g pm2
 following this [setup](create-grp-usr.md)
 
 * generate the startup script\
-  **NOTE:** This instruction comes back with a reply like ```To setup the Startup Script, copy/paste the following command: sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u pm2 --hp /home/begerad```
+  **NOTE:** This instruction comes back with a reply like ```To setup the Startup Script, copy/paste the following command: sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u <pm2 system service> --hp <pm2 installation home path>```
 ```
 pm2 startup systemd -u pm2
 ```
