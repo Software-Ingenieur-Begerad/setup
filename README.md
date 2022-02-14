@@ -23,5 +23,4 @@ Documentation for artitrary setups
   * Java
   * Maven
   * Reuse
-  * OpenVPN
-  * keepass
+  * IDE
