@@ -16,6 +16,7 @@ Documentation for artitrary setups
 * [Setup RDP Client](doc/setup-rdc.md)
 * [Setup PM2](doc/setup-pm2.md)
 * [Setup NPM](doc/setup-npm.md)
+* [Setup Password Manager](doc/setup-pwd-mgmt.md)
 * [Create Group and User](doc/create-grp-usr.md)
 * To-do List
   * gitk
