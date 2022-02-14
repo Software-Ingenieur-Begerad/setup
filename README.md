@@ -18,6 +18,7 @@ Documentation for artitrary setups
 * [Setup NPM](doc/setup-npm.md)
 * [Setup Password Manager](doc/setup-pwd-mgmt.md)
 * [Create Group and User](doc/create-grp-usr.md)
+* [Setup Emacs](doc/setup-emacs.md)
 * To-do List
   * gitk
   * Java
