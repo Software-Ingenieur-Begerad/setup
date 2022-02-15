@@ -1,6 +1,6 @@
 # Create Group And User
 
-* make shure group or user to be created does not exist yet
+* make sure group or user to be created does not exist yet
 ```
 id <group or user name>
 ```
