@@ -3,25 +3,25 @@
 Documentation for artitrary setups
 
 * [Create bootable USB Drive For OS Installation](doc/create-bootable-usb-drive.md)
-* [Install Debian](doc/install-debian.md)
-* [Configure Debian](doc/configure-debian.md)
-* [Enable SSH Server](doc/enable-ssh-server.md)
-* [Enable Firewall](doc/enable-firewall.md)
-* [Setup MS Teams](doc/setup-ms-teams.md)
-* [Setup NextCloud](doc/setup-nextcloud.md)
-* [Setup Email Client](doc/setup-email-client.md)
-* [Setup Git](doc/setup-git.md)
-* [Connect To GitHub Using SSH](doc/connect-github-ssh.md)
-* [Connect To VPN](doc/connect-vpn.md)
-* [Setup RDP Client](doc/setup-rdc.md)
-* [Setup PM2](doc/setup-pm2.md)
-* [Setup NPM](doc/setup-npm.md)
-* [Setup Password Manager](doc/setup-pwd-mgmt.md)
-* [Create Group and User](doc/create-grp-usr.md)
-* [Setup Emacs](doc/setup-emacs.md)
-* [Setup Java](doc/setup-java.md)
+* [Debian Installation](doc/install-debian.md)
+* [Debian Configuration](doc/configure-debian.md)
+* [Emacs](doc/setup-emacs.md)
+* [Email Client](doc/setup-email-client.md)
+* [Firewall](doc/enable-firewall.md)
+* [Git](doc/setup-git.md)
+* [GitHub Using SSH](doc/connect-github-ssh.md)
+* [Group and User](doc/create-grp-usr.md)
+* [Java](doc/setup-java.md)
+* [NextCloud](doc/setup-nextcloud.md)
+* [NPM](doc/setup-npm.md)
+* [Maven](doc/maven.md)
+* [MS Teams](doc/setup-ms-teams.md)
+* [Password Manager](doc/setup-pwd-mgmt.md)
+* [PM2](doc/setup-pm2.md)
+* [RDP Client](doc/setup-rdc.md)
+* [SSH Server](doc/enable-ssh-server.md)
+* [VPN](doc/connect-vpn.md)
 * To-do List
   * gitk
-  * Maven
   * Reuse
   * IDE
