@@ -9,3 +9,10 @@ sudo apt update
 ```
 sudo apt install emacs --no-install-recommends
 ```
+
+* personalise Emacs by copying this
+[.emacs file](.emacs)
+into the users root folder ```~/```
+```
+cp doc/.emacs ~/
+```
