@@ -25,3 +25,8 @@ git config --global user.email "<tbd>"
 ```
 git config --list
 ```
+
+* install gitk directly from the official repository
+```
+sudo apt install gitk --no-install-recommends
+```
