@@ -19,9 +19,9 @@ Documentation for artitrary setups
 * [Setup Password Manager](doc/setup-pwd-mgmt.md)
 * [Create Group and User](doc/create-grp-usr.md)
 * [Setup Emacs](doc/setup-emacs.md)
+* [Setup Java](doc/setup-java.md)
 * To-do List
   * gitk
-  * Java
   * Maven
   * Reuse
   * IDE
