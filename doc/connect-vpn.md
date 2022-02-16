@@ -28,8 +28,8 @@ sudo openvpn --config <configuration file *.ovpn> --ca <certification authority 
 ```
 
 * verify that ```resolvconf``` works properly\
-NOTE: You should see a ```resolv.conf``` file updated by\
-```resolvconf``` instead of e.g. ```NetworkManager```
+NOTE: You should see a ```resolv.conf``` file updated by
+```resolvconf``` instead of e.g. ```NetworkManager```\
 ```
 cat /etc/resolv.conf
 ```
