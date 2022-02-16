@@ -18,7 +18,7 @@ Documentation for artitrary setups
 * [MS Teams](doc/ms-teams.md)
 * [Password Manager](doc/pwd-mgmt.md)
 * [PM2](doc/pm2.md)
-* [RDP Client](doc/rdc.md)
+* [RDP Client](doc/rdp.md)
 * [SSH Server](doc/ssh-server.md)
 * [VPN](doc/vpn.md)
 * To-do List
