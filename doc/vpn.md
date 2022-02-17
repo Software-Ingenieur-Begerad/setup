@@ -33,3 +33,7 @@ NOTE: You should see a ```resolv.conf``` file updated by
 ```
 cat /etc/resolv.conf
 ```
+
+# Links
+
+[How to configure OpenVPN to resolve local DNS & hostnames](https://steamforge.net/wiki/index.php/How_to_configure_OpenVPN_to_resolve_local_DNS_&_hostnames)
