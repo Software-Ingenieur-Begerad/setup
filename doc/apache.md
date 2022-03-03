@@ -7,5 +7,5 @@ sudo apt update
 
 * install directly from the official repository
 ```
-sudo apt install maven --no-install-recommends
+sudo apt-get install apache2 --no-install-recommends
 ```
