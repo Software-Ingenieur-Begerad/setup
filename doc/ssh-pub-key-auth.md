@@ -1,5 +1,7 @@
 # Public Key Authentication
 
+## General
+
 * login on the server using password\
 NOTE: Leave this terminal/shell always open until this configuration is successfully validated. This is a backup connection to your server using password in case the public key authentication fails.
 ```
@@ -54,3 +56,9 @@ ssh -p<tbd> <user>@<host name>
 
 * if you completed public key authentication successfully,
 you may savely close the terminal/shell running the open password-based login
+
+## Links
+
+[How to Fix SSH Failed Permission Denied (publickey)](https://phoenixnap.com/kb/ssh-permission-denied-publickey)
+
+[How to Set Up SSH Keys on Debian 11](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
