@@ -1,6 +1,6 @@
 # Setup
 
-Documentation for artitrary setups
+## General Setup Steps
 
 * [Create bootable USB Drive For OS Installation](doc/bootable-usb-drive.md)
 * [Debian Installation](doc/debian-install.md)
@@ -20,8 +20,13 @@ Documentation for artitrary setups
 * [PM2](doc/pm2.md)
 * [RDP Client](doc/rdp.md)
 * [SSH Server](doc/ssh-server.md)
+* [SSH Public Key Authentication](doc/ssh-pub-key-auth.md)
 * [VPN](doc/vpn.md)
 * To-do List
-  * gitk
   * Reuse
   * IDE
+
+## Cloud Server
+
+* [SSH Server](doc/ssh-server.md)
+* [SSH Public Key Authentication](doc/ssh-pub-key-auth.md)
