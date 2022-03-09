@@ -1,5 +1,7 @@
 # Enable SSH Server
 
+## General
+
 * install ssh server
 ```
 sudo -l
@@ -16,7 +18,6 @@ sudo vi /etc/ssh/sshd_config
 sudo systemctl restart sshd
 ````
 
-* set up public key authentication by copying existing key
-```
-ssh-copy-id -p<tbd> <user>@<host name>
-```
+## Public Key Authentication
+
+Follow [this](./ssh-pub-key-auth.md) guide to configure public key authentication.
