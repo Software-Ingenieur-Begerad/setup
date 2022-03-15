@@ -13,7 +13,7 @@
 * [Group and User](doc/grp-usr.md)
 * [Java](doc/java.md)
 * [NextCloud](doc/nextcloud.md)
-* [NPM](doc/npm.md)
+* [Node](doc/node.md)
 * [Maven](doc/maven.md)
 * [MS Teams](doc/ms-teams.md)
 * [Password Manager](doc/pwd-mgmt.md)
