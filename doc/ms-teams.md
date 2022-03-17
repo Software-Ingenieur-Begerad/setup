@@ -1,5 +1,10 @@
 # Setup MS Teams
 
+* update your APT cache using
+```
+sudo apt update
+```
+
 * install curl using
 ```
 sudo apt install curl --no-install-recommends
@@ -13,11 +18,6 @@ curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 * import the official MS Teams repository using
 ```
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" > /etc/apt/sources.list.d/teams.list'
-```
-
-* update your APT cache using
-```
-sudo apt update
 ```
 
 * install MS Teams using

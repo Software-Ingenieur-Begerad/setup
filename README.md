@@ -6,6 +6,7 @@
 * [Create bootable USB Drive For OS Installation](doc/bootable-usb-drive.md)
 * [Debian Installation](doc/debian-install.md)
 * [Debian Configuration](doc/debian-config.md)
+* [Docker](doc/docker.md)
 * [Emacs](doc/emacs.md)
 * [Email Client](doc/email-client.md)
 * [Firewall](doc/firewall.md)
