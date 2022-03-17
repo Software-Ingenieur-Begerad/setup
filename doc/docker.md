@@ -49,6 +49,21 @@ systemctl status docker containerd
 docker -v
 ```
 
+* add the user <user> to the group ‘docker‘
+```
+sudo usermod -aG docker <user>
+```
+
+* log in as user <user> using the command below and verify the configuration
+```
+su - <user>
+```
+
+* run the following docker command to verify your installation
+```
+docker run hello-world
+```
+
 ## Links
 
 [How to Install Docker on Debian 11](https://www.techlear.com/blog/2021/10/01/how-to-install-docker-on-debian-11/)
