@@ -2,7 +2,7 @@
 
 # Overview
 
-The [project](https://github.com/WRI-Cities/static-GTFS-manager) is to be deployed.
+The [static-gtfs-manager](https://github.com/WRI-Cities/static-GTFS-manager) project is to be deployed.
 
 # Preparation
 
@@ -15,10 +15,10 @@ git clone git@github.com:WRI-Cities/static-GTFS-manager.git
 cd static-GTFS-manager
 docker build -t static-gtfs-manager .
 docker images
-docker tag static-gtfs-manager:latest danceswithcycles/static-gtfs-manager:march-18-2022
+docker tag static-gtfs-manager:latest <user>/static-gtfs-manager:<tag>
 docker images
-docker login -u danceswithcycles
-docker push danceswithcycles/static-gtfs-manager:march-18-2022
+docker login -u <user>
+docker push <user>/static-gtfs-manager:<tag>
 ```
 
 # Deployment
