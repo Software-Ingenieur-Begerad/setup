@@ -1,11 +1,17 @@
 # Setup
 
+## Devices
+
+* [Cloud Server](devices/cloud-server.md)
+* [tpt60](devices/tpt60.md)
+
 ## General Setup Steps
 
 * [Apache](doc/apache.md)
 * [Create bootable USB Drive For OS Installation](doc/bootable-usb-drive.md)
 * [Debian Installation](doc/debian-install.md)
 * [Debian Configuration](doc/debian-config.md)
+* [Debian Lid Switch Configuration](doc/debian-lid-switch-config.md)
 * [Docker](doc/docker.md)
 * [Emacs](doc/emacs.md)
 * [Email Client](doc/email-client.md)
@@ -34,10 +40,3 @@
 * To-do List
   * Reuse
   * IDE
-
-## Cloud Server
-
-* [SSH Server](doc/ssh-server.md)
-* [SSH Public Key Authentication](doc/ssh-pub-key-auth.md)
-* [Docker](doc/docker.md)
-* [Static-gtfs-manager](doc/static-gtfs-manager.md)
