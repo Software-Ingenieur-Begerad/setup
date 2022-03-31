@@ -15,6 +15,7 @@ sudo vi /etc/ssh/sshd_config
 
 * in this file, make sure the following options are set as follows
 ```
+PasswordAuthentication yes
 PermitRootLogin no
 PubkeyAuthentication yes
 #GSSAPIAuthentication yes
@@ -56,6 +57,12 @@ ssh -p<tbd> <user>@<host name>
 
 * if you completed public key authentication successfully,
 you may savely close the terminal/shell running the open password-based login
+
+* revert the password changes in ```ssh_config``` if you are srcurity conscious\
+```
+sudo vi /etc/ssh/sshd_config
+PasswordAuthentication yes
+```
 
 ## Links
 

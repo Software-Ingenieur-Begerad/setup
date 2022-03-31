@@ -2,6 +2,7 @@
 
 ## Devices
 
+* [Antje](devices/antje.md)
 * [Cloud Server](devices/cloud-server.md)
 * [tpt60](devices/tpt60.md)
 
