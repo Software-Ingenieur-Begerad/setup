@@ -1,6 +1,8 @@
-# Prepare USB Drive For Installation
+# Create Bootable USB Drive
 
 * download debian
+
+* mount USB drive
 
 * identify USB drive using
 ```
