@@ -2,6 +2,7 @@
 
 ## Devices
 
+* [Acer](devices/acer.md)
 * [Antje](devices/antje.md)
 * [Cloud Server](devices/cloud-server.md)
 * [Lenovo ThinkPad T490](devices/ltpt490.md)
