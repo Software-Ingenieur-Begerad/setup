@@ -4,7 +4,8 @@
 
 * [Antje](devices/antje.md)
 * [Cloud Server](devices/cloud-server.md)
-* [tpt60](devices/tpt60.md)
+* [Lenovo ThinkPad T490](devices/ltpt490.md)
+* [Lenovo ThinkPad T60](devices/tpt60.md)
 
 ## General Setup Steps
 
