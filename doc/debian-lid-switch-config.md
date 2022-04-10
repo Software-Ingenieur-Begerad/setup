@@ -8,5 +8,5 @@ HandleLidSwitch=ignore
 
 * reload logind.conf to make your changes go into effect\
 ```
-systemctl restart systemd-logind
+sudo systemctl restart systemd-logind
 ```
