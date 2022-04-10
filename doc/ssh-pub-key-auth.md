@@ -61,7 +61,7 @@ you may savely close the terminal/shell running the open password-based login
 * revert the password changes in ```ssh_config``` if you are srcurity conscious\
 ```
 sudo vi /etc/ssh/sshd_config
-PasswordAuthentication yes
+PasswordAuthentication no
 ```
 
 ## Links

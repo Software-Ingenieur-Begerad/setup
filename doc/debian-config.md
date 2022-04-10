@@ -1,8 +1,24 @@
 # Configure Debian
 
+* install sudo
+```
+su -
+apt install sudo --no-install-recommends
+exit
+```
+
 * add user <tbd> to sudoers using
 ```
-sudo usermod -a -G sudo <tbd>
+whereis usermod
+su -
+usermod -a -G sudo <tbd>
+exit
+exit
+```
+
+* logout and login user <tbd> and validate participation of the sudo group
+```
+sudo -l
 ```
 
 * update Debian

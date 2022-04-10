@@ -16,7 +16,7 @@ systemctl list-unit-files | grep enabled | grep ssh
 sudo vi /etc/ssh/sshd_config
 sudo systemctl restart sshd
 ````
-* check port configuration
+* validate port configuration
 ```
 ss -tupln|grep <sshd port number>
 
