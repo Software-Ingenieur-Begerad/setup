@@ -12,6 +12,7 @@
 
 * [Apache](doc/apache.md)
 * [Create bootable USB Drive For OS Installation](doc/bootable-usb-drive.md)
+* [Cups](doc/cups.md)
 * [Debian Installation](doc/debian-install.md)
 * [Debian Configuration](doc/debian-config.md)
 * [Debian Lid Switch Configuration](doc/debian-lid-switch-config.md)

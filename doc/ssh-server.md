@@ -20,6 +20,8 @@ sudo systemctl restart sshd
 ```
 ss -tupln|grep <sshd port number>
 
+* update firewall with <sshd port number> like [this](firewall.md)
+
 ## Public Key Authentication
 
 Follow [this](./ssh-pub-key-auth.md) guide to configure public key authentication.
