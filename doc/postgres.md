@@ -7,10 +7,10 @@ sudo apt update
 
 * install postgres directly from the official repository
 ```
-sudo apt-get install postgresql  --no-install-recommends
+sudo apt-get install postgresql --no-install-recommends
 ```
 
-* validate the existens of the postgres admin user
+* validate the existence of the postgres admin user
 ```
 cat /etc/passwd|grep postgres
 cat /etc/group|grep postgres
@@ -32,10 +32,11 @@ sudo -u postgres createuser --interactive --password <user name>
 sudo -u postgres createdb <database name> -O <user name>
 ```
 
-* edit the pg_hba.conf file
+* edit the pg_hba.conf file\
+NOTE: Insert the postgresql database version that is running on the respective host
 ```
-sudo cp /etc/postgresql/13/main/pg_hba.conf /etc/postgresql/13/main/pg_hba.conf-backup
-sudo vi /etc/postgresql/13/main/pg_hba.conf
+sudo cp /etc/postgresql/<psql version>/main/pg_hba.conf /etc/postgresql/<psgl version>/main/pg_hba.conf-backup
+sudo vi /etc/postgresql/<psql version>/main/pg_hba.conf
 ```
 
 * in order to be able to run a Spring Boot application with a local PostgreSQL installation, change the authentication method for the Unix domain socket and local connections to trust like this
@@ -68,12 +69,12 @@ sudo ufw status numbered
 
 * create config backup
 ```
-sudo cp /etc/postgresql/13/main/postgresql.conf /etc/postgresql/13/main/postgresql.conf-backup
+sudo cp /etc/postgresql/<version>/main/postgresql.conf /etc/postgresql/<version>/main/postgresql.conf-backup
 ```
 
 * open config file
 ```
-sudo vi /etc/postgresql/13/main/postgresql.conf
+sudo vi /etc/postgresql/<version>/main/postgresql.conf
 ```
 
 * edit config file like this
@@ -84,7 +85,7 @@ listen_addresses = '*'
 
 * open config file
 ```
-sudo vi /etc/postgresql/13/main/pg_hba.conf
+sudo vi /etc/postgresql/<version>/main/pg_hba.conf
 ```
 
 * edit config file like this

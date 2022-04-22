@@ -2,14 +2,18 @@
 
 * download OpenJDK from the [Eclipse Foundation](https://adoptium.net/)
 
-* extract JDK to target folder
+* extract JDK to target folder\
+NOTE: Create target folder in advance
 ```
+sudo mkdir -p /usr/lib/jvm/open-jdk-17 --
 sudo tar -xvzf ./OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8.tar.gz -C /usr/lib/jvm/open-jdk-17 --strip-components=1
+sudo mkdir -p /usr/lib/jvm/open-jdk-11 --
 sudo tar -xvzf ./OpenJDK11U-jdk_x64_linux_hotspot_11.0.14.1_1.tar.gz -C /usr/lib/jvm/open-jdk-11/ --strip-components=1
 ```
 
 * check if any JDK is already installed
 ```
+java -version
 update-alternatives --list java
 ```
 

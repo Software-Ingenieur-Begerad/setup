@@ -34,11 +34,13 @@
 * [Password Manager](doc/pwd-mgmt.md)
 * [Pip3](doc/pip3.md)
 * [PM2](doc/pm2.md)
+* [Postgres](doc/postgres.md)
 * [RDP Client](doc/rdp.md)
 * [Redis](doc/redis.md)
 * [Rsync](doc/rsync.md)
 * [SSH Server](doc/ssh-server.md)
 * [SSH Public Key Authentication](doc/ssh-pub-key-auth.md)
+* [Tomcat 8](doc/tomcat8.md)
 * [VPN](doc/vpn.md)
 * [Yarn](doc/yarn.md)
 * To-do List
