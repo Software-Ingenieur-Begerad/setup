@@ -31,6 +31,7 @@
 * [MS Teams](doc/ms-teams.md)
 * [NextCloud](doc/nextcloud.md)
 * [Node](doc/node.md)
+* [OneBusAway](doc/onebusaway.md)
 * [Password Manager](doc/pwd-mgmt.md)
 * [Pip3](doc/pip3.md)
 * [PM2](doc/pm2.md)
@@ -40,7 +41,6 @@
 * [Rsync](doc/rsync.md)
 * [SSH Server](doc/ssh-server.md)
 * [SSH Public Key Authentication](doc/ssh-pub-key-auth.md)
-* [Tomcat 8](doc/tomcat8.md)
 * [VPN](doc/vpn.md)
 * [Yarn](doc/yarn.md)
 * To-do List
