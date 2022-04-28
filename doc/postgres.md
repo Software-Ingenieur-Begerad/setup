@@ -24,7 +24,10 @@ postgres=# \password postgres
 
 * create a new database user
 ```
-sudo -u postgres createuser --interactive --password <user name>
+su - postgres
+psql
+create user new_<user name> with encrypted password <key>;
+grant all privileges on database <database name> to <user name>;
 ```
 
 * create a new database with createdb command, which is going to be owned by user <user name>
@@ -72,7 +75,7 @@ sudo ufw status numbered
 sudo cp /etc/postgresql/<version>/main/postgresql.conf /etc/postgresql/<version>/main/postgresql.conf-backup
 ```
 
-* open config file
+* open config file to define what IP addresses postgres to listen on
 ```
 sudo vi /etc/postgresql/<version>/main/postgresql.conf
 ```
@@ -83,7 +86,7 @@ sudo vi /etc/postgresql/<version>/main/postgresql.conf
 listen_addresses = '*'
 ```
 
-* open config file
+* open config file to define access to all databases for all users with an encrypted key
 ```
 sudo vi /etc/postgresql/<version>/main/pg_hba.conf
 ```
