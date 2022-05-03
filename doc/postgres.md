@@ -18,21 +18,21 @@ cat /etc/group|grep postgres
 
 * set key for user postgres
 ```
-sudo -u postgres psql postgres
+sudo -u postgres psql
 postgres=# \password postgres
-```
-
-* create a new database user
-```
-su - postgres
-psql
-create user new_<user name> with encrypted password <key>;
-grant all privileges on database <database name> to <user name>;
 ```
 
 * create a new database with createdb command, which is going to be owned by user <user name>
 ```
-sudo -u postgres createdb <database name> -O <user name>
+sudo -u postgres psql
+CREATE DATABASE <database name>;
+```
+
+* create a new database user
+```
+sudo -u postgres psql
+CREATE USER <user name> with encrypted password <key>;
+grant all privileges on database <database name> to <user name>;
 ```
 
 * edit the pg_hba.conf file\
@@ -42,7 +42,7 @@ sudo cp /etc/postgresql/<psql version>/main/pg_hba.conf /etc/postgresql/<psgl ve
 sudo vi /etc/postgresql/<psql version>/main/pg_hba.conf
 ```
 
-* in order to be able to run a Spring Boot application with a local PostgreSQL installation, change the authentication method for the Unix domain socket and local connections to trust like this
+* in order to be able to run applications like e.g. Spring Boot with a local PostgreSQL installation, change the authentication method for the Unix domain socket and local connections to trust like this
 ```
 # "local" is for Unix domain socket connections only
 local   all             all                                     trust
