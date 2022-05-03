@@ -7,7 +7,7 @@ sudo apt update
 
 * globally install the latest stable version of PM2 via npm
 ```
-sudo npm i -g pm2 
+npm i -g pm2 
 ```
 
 * create group and user ```pm2```
