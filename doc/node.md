@@ -1,4 +1,4 @@
-# Setup NPM...
+# Setup Node
 
 * update apt repository cache
 ```
@@ -63,5 +63,5 @@ nvm run default --version
 
 * run node script with the desired node version
 ```
-nvm exec 12.20.1 server.js
+nvm exec 12.20.1 <node script>.js
 ```
