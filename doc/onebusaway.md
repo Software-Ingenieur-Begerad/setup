@@ -162,9 +162,105 @@ sudo cp ~/oba/mysql-connector-java-8.0.28.jar .
 ```
 
 * Configure the OneBusAway Transit Data Federation Webapp
+  * change ```pasword``` value to ```<blub>```
+  * change ```agencyId``` value to ```Flix```
+  * change ```refreshInterval``` value to ```60```
+  * change ```tripUpdatesUrl``` value to ```https://wimb-api-ops-gis.ew1p3.k8s.mfb.io/v1/gtfs-rt/flavour/rmv/region/de/agency/bus_train/trip-update```
+  * change ```vehiclePositionsUrl``` value ```to https://wimb-api-ops-gis.ew1p3.k8s.mfb.io/v1/gtfs-rt/flavour/rmv/region/de/agency/bus_train/vehicle-position```
+  * change ```alertsUrl``` value to ```https://wimb-api-ops-gis.ew1p3.k8s.mfb.io/v1/gtfs-rt/flavour/rmv/region/de/agency/bus_train/alerts```
+
 ```
 sudo cp /var/lib/tomcat8/webapps/onebusaway-transit-data-federation-webapp/WEB-INF/classes/data-sources.xml /var/lib/tomcat8/webapps/onebusaway-transit-data-federation-webapp/WEB-INF/classes/data-sources.xml.backup
 sudo vi /var/lib/tomcat8/webapps/onebusaway-transit-data-federation-webapp/WEB-INF/classes/data-sources.xml
+```
+
+* Deploy and Configure the OneBusAway API Webapp
+
+* copy files
+
+```
+sudo mkdir /var/lib/tomcat8/webapps/onebusaway-api-webapp
+ls -ltha /var/lib/tomcat8/webapps
+cd /var/lib/tomcat8/webapps/onebusaway-api-webapp
+sudo mv ~/oba/onebusaway-api-webapp-2.0.0.war /var/lib/tomcat8/webapps/onebusaway-api-webapp/
+ls /var/lib/tomcat8/webapps/onebusaway-api-webapp/
+sudo jar xvf /var/lib/tomcat8/webapps/onebusaway-api-webapp/onebusaway-api-webapp-2.0.0.war
+ls
+sudo rm -rf /var/lib/tomcat8/webapps/onebusaway-api-webapp/onebusaway-api-webapp-2.0.0.war
+ls
+```
+
+* copy the MySQL Driver
+
+```
+cd /var/lib/tomcat8/webapps/onebusaway-api-webapp/WEB-INF/lib
+sudo cp ~/oba/mysql-connector-java-8.0.28.jar .
+```
+
+* configure the OneBusAway API Webapp
+  * insert last bean
+  * change value of ```username``` to ```oba``` twice
+  * change value of ```password``` to ```<blub>``` twice
+
+```
+cd /var/lib/tomcat8/webapps/onebusaway-api-webapp/WEB-INF/classes/
+ls
+sudo cp data-sources.xml data-sources.xml-backup
+sudo vi data-sources.xml
+```
+
+* Deploy and Configure the OneBusAway Enterprise ACTA Webapp
+
+* copy files
+
+```
+rm -rf /var/lib/tomcat8/webapps/ROOT/*
+sudo mkdir ROOT
+cd /var/lib/tomcat8/webapps/ROOT
+sudo mv ~/oba/onebusaway-enterprise-acta-webapp-2.0.0.war /var/lib/tomcat8/webapps/ROOT/
+ls
+sudo jar xvf /var/lib/tomcat8/webapps/ROOT/onebusaway-enterprise-acta-webapp-2.0.0.war
+sudo rm -rf /var/lib/tomcat8/webapps/ROOT/onebusaway-enterprise-acta-webapp-2.0.0.war
+ls
+
+* copy MySQL Driver
+
+```
+cd /var/lib/tomcat8/webapps/ROOT/WEB-INF/lib
+sudo cp ~/oba/mysql-connector-java-8.0.28.jar .
+ls
+```
+
+* configure the OneBusAway API Webapp
+  * change value of ```username``` to ```oba```
+  * change value of ```password``` to ```<blub>```
+
+```
+cd /var/lib/tomcat8/webapps/ROOT/WEB-INF/classes
+ls
+sudo cp data-sources.xml data-sources.xml-backup
+```
+
+* Start the Tomcat8 Service
+
+* In a SSH terminal you may want to run the following command so that you can watch the console output of the Tomcat8 service as OneBusAway starts up for the first time:
+
+```
+tail -f /var/log/tomcat8/catalina.out
+```
+
+* start the Tomcat8 Service
+
+```
+sudo service tomcat8 start
+```
+
+* or
+
+```
+systemctl status tomcat.service
+sudo systemctl restart tomcat.service
+systemctl status tomcat.service
 ```
 
 ## Links
