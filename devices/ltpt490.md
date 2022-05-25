@@ -7,3 +7,4 @@
 * [Debian Configuration](../doc/debian-config.md)
 * [Debian Keyboard Layout](../doc/debian-keyboard-layout.md)
 * [Debian Lid Switch Configuration](../doc/debian-lid-switch-config.md)
+* [Python for Debian 11](../doc/debian11python.md)
