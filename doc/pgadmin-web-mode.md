@@ -1,4 +1,4 @@
-# Setup Pgamin
+# Setup pgAmin in Web Mode
 
 * get the latest version of installed packages and refresh the repo cache
 ```
