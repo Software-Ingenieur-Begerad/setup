@@ -6,7 +6,7 @@ sudo useradd -m <usr>
 ```
 * create password\
 ```
-sudo passwd username
+sudo passwd <usr>
 ```
 * add user <usr> to sudo group\
 ```
