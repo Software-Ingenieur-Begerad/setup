@@ -10,4 +10,6 @@ sudo passwd <usr>
 ```
 * add user <usr> to sudo group\
 ```
-sudo usermod -a -G sudo <usr>
+su -
+usermod -a -G sudo <usr>
+```
